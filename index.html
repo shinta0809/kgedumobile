@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KG EDU 모바일</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="brand-logo">KG</span>
+        <span class="brand-name">EDU</span>
+      </div>
+      <div class="top-icons">
+        <button class="icon-btn" aria-label="메뉴">
+          <img src="assets/icon-menu.png" alt="">
+        </button>
+        <button class="icon-btn" aria-label="프로필">
+          <img src="assets/icon-account.png" alt="">
+        </button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active">온라인 교육</button>
+      <button class="tab">오프라인 교육</button>
+      <button class="tab">나의 강의실</button>
+    </nav>
+
+    <section class="search-area">
+      <div class="search-box">
+        <img class="icon-16" src="assets/icon-search.png" alt="">
+        <input type="text" placeholder="찾으시는 강좌가 있으신가요?">
+        <button class="voice-btn" aria-label="음성 검색">🎤</button>
+        <button class="filter-btn" aria-label="필터">⚙️</button>
+      </div>
+      <div class="chips">
+        <button class="chip primary">생성형 AI</button>
+        <button class="chip ghost">진행중</button>
+        <button class="chip ghost">완료</button>
+        <button class="chip ghost">전체</button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide hero-card">
+            <img class="hero-bg" src="assets/banner.png" alt="생성형 AI와 윤리 배너">
+            <div class="hero-text">
+              <p class="badge">맞춤 추천</p>
+              <h1>생성형 AI와 윤리</h1>
+              <p class="subtitle">생성형 AI 시대에 필요한 윤리와 실습을 한 번에</p>
+              <button class="cta">자세히 보기</button>
+            </div>
+          </article>
+          <article class="swiper-slide hero-card">
+            <img class="hero-bg" src="assets/banner.png" alt="챗GPT 활용 배너">
+            <div class="hero-text">
+              <p class="badge">인기 과정</p>
+              <h1>챗GPT 실무 자동화</h1>
+              <p class="subtitle">반복 업무를 AI로 단축하고 생산성을 올리세요</p>
+              <button class="cta">과정 보기</button>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination hero-pagination"></div>
+      </div>
+    </section>
+
+    <section class="quick-menu">
+      <div class="quick-item">
+        <div class="quick-icon purple">
+          <img src="assets/icon-home.png" alt="">
+        </div>
+        <p>KG 학습지원</p>
+      </div>
+      <div class="quick-item">
+        <div class="quick-icon pink">
+          <img src="assets/icon-info.png" alt="">
+        </div>
+        <p>학습지원센터</p>
+      </div>
+      <div class="quick-item">
+        <div class="quick-icon yellow">
+          <img src="assets/icon-menu.png" alt="">
+        </div>
+        <p>공지사항</p>
+      </div>
+      <div class="quick-item">
+        <div class="quick-icon violet">
+          <img src="assets/icon-like.png" alt="">
+        </div>
+        <p>관심과정</p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="section-header">
+        <h2>어려운 AI, 쉽고 재밌게!</h2>
+        <button class="more-btn" aria-label="더보기">＋</button>
+      </div>
+      <div class="swiper course-swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide course-card">
+            <img class="course-thumb" src="assets/card-h.png" alt="강의 썸네일">
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="pill">온라인 과정</span>
+                <span class="time">11:00:32</span>
+              </div>
+              <h3>챗GPT를 활용한 실무 자동화 시리즈</h3>
+              <p class="course-desc">설계 및 개발 업무 개선하기</p>
+              <div class="course-actions">
+                <button class="like">
+                  <img src="assets/icon-like.png" alt="">
+                </button>
+                <div class="tags">
+                  <span>#챗GPT</span>
+                  <span>#AI교육</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="swiper-slide course-card">
+            <img class="course-thumb" src="assets/card-h.png" alt="강의 썸네일">
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="pill">온라인 과정</span>
+                <span class="time">08:24:10</span>
+              </div>
+              <h3>AI 윤리 가이드와 책임 있는 활용</h3>
+              <p class="course-desc">생성형 AI 시대 필수 역량</p>
+              <div class="course-actions">
+                <button class="like active">
+                  <img src="assets/icon-like.png" alt="">
+                </button>
+                <div class="tags">
+                  <span>#AI윤리</span>
+                  <span>#실습</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="swiper-slide course-card">
+            <img class="course-thumb" src="assets/card-h.png" alt="강의 썸네일">
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="pill">온라인 과정</span>
+                <span class="time">06:14:55</span>
+              </div>
+              <h3>프롬프트 엔지니어링 실습</h3>
+              <p class="course-desc">사례 중심 작성법</p>
+              <div class="course-actions">
+                <button class="like">
+                  <img src="assets/icon-like.png" alt="">
+                </button>
+                <div class="tags">
+                  <span>#프롬프트</span>
+                  <span>#실습</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-button-prev course-prev"></div>
+        <div class="swiper-button-next course-next"></div>
+      </div>
+    </section>
+
+    <section class="monthly">
+      <h2>월간 BEST</h2>
+      <div class="grid">
+        <article class="tile">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>ChatGPT 실전 활용</h3>
+            <p>업무 생산성 높이기</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>프롬프트 엔지니어링</h3>
+            <p>사례로 배우는 작성법</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>데이터 분석 with AI</h3>
+            <p>자동화 리포트 만들기</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>AI 커뮤니케이션</h3>
+            <p>AI와 협업하는 방법</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="life">
+      <h2>슬기로운 KG생활</h2>
+      <div class="grid">
+        <article class="tile light">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>ChatGPT 아이디어톤</h3>
+            <p>팀 프로젝트 자동화</p>
+          </div>
+        </article>
+        <article class="tile light">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>AI 툴킷 워크숍</h3>
+            <p>무료 도구 총정리</p>
+          </div>
+        </article>
+        <article class="tile light">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>검색 최적화 전략</h3>
+            <p>프롬프트 템플릿 모음</p>
+          </div>
+        </article>
+        <article class="tile light">
+          <img class="tile-thumb" src="assets/card-v.png" alt="썸네일">
+          <div class="tile-body">
+            <h3>추천 학습 로드맵</h3>
+            <p>입문부터 실전까지</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <p class="foot-title">카타르시스랩</p>
+        <p>고객센터 02.6243.2777</p>
+        <p>운영시간 09:30~18:00 · 공휴일 및 점심시간 제외</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Chatbot">💬</a>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active">
+        <img src="assets/icon-home.png" alt="">
+        <small>홈</small>
+      </button>
+      <button class="nav-item">
+        <img src="assets/icon-menu.png" alt="">
+        <small>강의</small>
+      </button>
+      <button class="nav-item">
+        <img src="assets/icon-time.png" alt="">
+        <small>학습관리</small>
+      </button>
+      <button class="nav-item">
+        <img src="assets/icon-like.png" alt="">
+        <small>즐겨찾기</small>
+      </button>
+      <button class="nav-item">
+        <img src="assets/icon-account.png" alt="">
+        <small>MY</small>
+      </button>
+    </nav>
+  </main>
+</body>
+</html>
